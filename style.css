@@ -1,0 +1,127 @@
+/* Custom Fonts (Optional, but adds personality) */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Darker text color */
+}
+
+/* Custom Colors (adjust these to your preference) */
+.bg-primary {
+    background-color: #7952B3 !important; /* A nice shade of purple */
+}
+
+.text-primary {
+    color: #7952B3 !important;
+}
+
+.btn-primary {
+    background-color: #7952B3;
+    border-color: #7952B3;
+}
+
+.btn-primary:hover {
+    background-color: #5d3d8a;
+    border-color: #5d3d8a;
+}
+
+.text-secondary {
+    color: #5d3d8a !important; /* A darker purple for accents */
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #7952B3 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #343a40;
+    font-weight: 500;
+}
+
+/* Important: This makes the active link stand out */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #7952B3;
+    font-weight: 700; /* Make active link bolder */
+    border-bottom: 2px solid #7952B3; /* Add an underline effect */
+    padding-bottom: 5px; /* Adjust padding for underline */
+}
+
+
+/* Jumbotron/Header Styling */
+.jumbotron {
+    /* REMOVED: background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1600x900/?mindfulness,nature,calm'); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    /* Add a fallback background-color just in case the image fails to load */
+    background-color: #7952B3;
+    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+}
+
+.jumbotron h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.jumbotron .lead {
+    font-size: 1.5rem;
+}
+
+/* Quote Section */
+#quoteDisplay {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #495057;
+}
+
+/* Activity Cards */
+.activity-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.activity-card .card-title {
+    color: #7952B3;
+    font-weight: 600;
+}
+
+/* Resources List */
+.list-group-item {
+    border-color: #e9ecef;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5;
+    transform: translateX(5px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40 !important; /* Darker footer */
+    color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    .jumbotron .lead {
+        font-size: 1.2rem;
+    }
+}
